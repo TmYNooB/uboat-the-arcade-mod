@@ -107,6 +107,27 @@ Folgende Sektionen existieren im Spiel aber nicht in der Mod — könnten Arcade
 
 ## GitHub Copilot Workflow (Automatisierung & Memory)
 
+### GitHub Repo Workflow (verbindlich)
+
+- **Canonical Repo:** `https://github.com/TmYNooB/uboat-the-arcade-mod`
+- **Vor jeder Änderung:** `git fetch origin` und `git status -sb` ausführen, damit klar ist ob lokal und remote synchron sind.
+- **Branch-Strategie:**
+	- Kleine, risikoarme Änderungen direkt auf `main`.
+	- Größere oder riskante Umbauten auf Feature-Branch (`feature/...`) und erst nach Review auf `main`.
+- **Commit-Disziplin:**
+	- Nur relevante Dateien stagen (kein blindes `git add .`, außer explizit gewünscht).
+	- Commit-Messages kurz und fachlich, mit klarem Scope (z. B. `tune torpedo magnetic params`).
+- **Push-Disziplin:**
+	- Nach Commit immer `git push` und anschließend kurz `git rev-parse HEAD` vs. `git rev-parse origin/main` prüfen.
+	- Bei Divergenz zuerst klären, nicht hart überschreiben.
+- **Secret-Sicherheit:**
+	- Niemals Tokens, API-Keys, Session-Cookies oder Passwörter in Dateien, Commits oder Changelogs schreiben.
+	- Vor Workshop-Upload einen Secret-Scan fahren (z. B. mit `Source/secret-audit.ps1`), Ausgabe nur maskiert.
+- **Cross-Referenzen aktuell halten:**
+	- Bei Repo-/Workshop-Link-Änderungen immer beide Seiten aktualisieren:
+		- `STEAM_DESCRIPTION.txt` (Workshop-Text)
+		- `README.md` (GitHub-Startseite)
+
 ### Copilot Best Practice - **IMMER DIESE REIHENFOLGE:**
 
 1. **Am Start jeder Task:** `search_memory` ausführen
