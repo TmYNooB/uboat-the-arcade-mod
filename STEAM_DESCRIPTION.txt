@@ -60,6 +60,15 @@ This mod is perfect for:
 
 Supports UBOAT version [b]2026.1[/b] (including Distant Coasts DLC with Type IX U-boats)
 
+[h2]🔎 Source & Transparency[/h2]
+
+You can review the full mod source and scripts on GitHub:
+[list]
+[*][url=https://github.com/TmYNooB/uboat-the-arcade-mod]github.com/TmYNooB/uboat-the-arcade-mod[/url]
+[/list]
+
+If you want to verify values, compare updates, or inspect scripts yourself, this repository is public for read access.
+
 [h2]⚠️ Note[/h2]
 
 This is a total arcade conversion. Expect unlimited resources, instant repairs, and pure combat focus. The sim stays home—this is pure submarine action.
