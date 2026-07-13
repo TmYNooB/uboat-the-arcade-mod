@@ -1,0 +1,53 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "torpedo-param-audit",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-NoProfile",
+				"-ExecutionPolicy",
+				"Bypass",
+				"-Command",
+				"Import-Module ImportExcel; $modPath='c:\\Users\\User\\AppData\\LocalLow\\Deep Water Studio\\UBOAT\\Mods\\uboat-the-arcade-mod\\Data Sheets\\Entities.xlsx'; $origPath='D:\\Steam\\steamapps\\common\\UBOAT\\UBOAT_Data\\Data Sheets\\Entities.xlsx'; $modT=@(Import-Excel $modPath -WorksheetName 'Equipment'|Where-Object{[string]$_.Tags -eq 'Torpedo'}); $origT=@(Import-Excel $origPath -WorksheetName 'Equipment'|Where-Object{[string]$_.Tags -eq 'Torpedo'}); function ParseParams([string]$s){ $d=@{}; if([string]::IsNullOrWhiteSpace($s)){ return $d }; foreach($part in ($s -split ',')){ $kv=$part.Trim(); if($kv -match '^([^=]+)=(.+)$'){ $k=$matches[1].Trim(); $v=$matches[2].Trim(); $d[$k]=$v } }; return $d }; $origRows=@(); foreach($r in $origT){ $origRows += [pscustomobject]@{Id=$r.'/';Map=(ParseParams ([string]$r.Parameters))} }; $modRows=@(); foreach($r in $modT){ $modRows += [pscustomobject]@{Id=$r.'/';Map=(ParseParams ([string]$r.Parameters))} }; $origKeys=@($origRows|ForEach-Object{$_.Map.Keys}|Select-Object -Unique|Sort-Object); $modKeys=@($modRows|ForEach-Object{$_.Map.Keys}|Select-Object -Unique|Sort-Object); $missingInMod=@($origKeys|Where-Object{$_ -notin $modKeys}); $extraInMod=@($modKeys|Where-Object{$_ -notin $origKeys}); $keyStats=@(); foreach($k in $origKeys){ $vals=@($origRows|ForEach-Object{$_.Map[$k]}|Where-Object{$_ -ne $null -and $_ -ne ''}); $allNum=$true; $nums=@(); foreach($v in $vals){$n=0.0; if([double]::TryParse([string]$v,[System.Globalization.NumberStyles]::Any,[System.Globalization.CultureInfo]::InvariantCulture,[ref]$n)){$nums+=$n}else{$allNum=$false;break}}; if($allNum -and $nums.Count -gt 0){$keyStats+=[pscustomobject]@{Parameter=$k;Type='numeric';Min=($nums|Measure-Object -Minimum).Minimum;Max=($nums|Measure-Object -Maximum).Maximum;UniqueCount=@($vals|Select-Object -Unique).Count}} else {$u=@($vals|Select-Object -Unique); $s=@($u|Sort-Object); $keyStats+=[pscustomobject]@{Parameter=$k;Type='text';Min=$s[0];Max=$s[$s.Count-1];UniqueCount=$u.Count}} }; $nonUniform=@(); foreach($k in $modKeys){ $vals=@($modRows|ForEach-Object{$_.Map[$k]}|Where-Object{$_ -ne $null -and $_ -ne ''}|Select-Object -Unique); if($vals.Count -gt 1){ $nonUniform += [pscustomobject]@{Parameter=$k;UniqueCount=$vals.Count;Examples=(@($vals|Select-Object -First 8)-join ' | ')} } }; $missingPerRow=@(); foreach($r in $modRows){ $keys=@($r.Map.Keys); $miss=@($modKeys|Where-Object{$_ -notin $keys}); if($miss.Count -gt 0){ $missingPerRow += [pscustomobject]@{Id=$r.Id;MissingKeys=($miss -join ', ')} } }; $res=[pscustomobject]@{originalTorpedoes=$origRows.Count;modTorpedoes=$modRows.Count;originalParamKeys=$origKeys;modParamKeys=$modKeys;missingParamKeysInMod=$missingInMod;extraParamKeysInMod=$extraInMod;paramStatsOriginal=@($keyStats|Sort-Object Parameter);modNonUniformParamValues=@($nonUniform|Sort-Object Parameter);modRowsMissingAnyModParamKey=@($missingPerRow)}; $out='c:\\Users\\User\\AppData\\LocalLow\\Deep Water Studio\\UBOAT\\Mods\\uboat-the-arcade-mod\\torpedo-parameters-audit.json'; $res|ConvertTo-Json -Depth 8 | Set-Content $out -Encoding UTF8; Write-Output \"Wrote $out\""
+			]
+		},
+		{
+			"label": "run-torpedo-param-audit-script",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-NoProfile",
+				"-ExecutionPolicy",
+				"Bypass",
+				"-File",
+				"Source\\torpedo-param-audit.ps1"
+			]
+		},
+		{
+			"label": "run-torpedo-param-audit-script-pwsh",
+			"type": "shell",
+			"command": "pwsh",
+			"args": [
+				"-NoProfile",
+				"-ExecutionPolicy",
+				"Bypass",
+				"-File",
+				"Source\\torpedo-param-audit.ps1"
+			]
+		},
+		{
+			"label": "set-torpedo-magnetic-0001",
+			"type": "shell",
+			"command": "pwsh",
+			"args": [
+				"-NoProfile",
+				"-ExecutionPolicy",
+				"Bypass",
+				"-File",
+				"Source\\set-torpedo-magnetic-0001.ps1"
+			]
+		}
+	]
+}

@@ -1,0 +1,19 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+*.log
+
+# VS Code local state
+.vscode/settings.json
+
+# PowerShell / tooling artifacts
+*.ps1xml
+*.clixml
+
+# UBOAT generated cache artifacts (do not version generated .dat sheets)
+Data Sheets/*.dat
+
+# Local workshop upload working data
+.steam-upload/

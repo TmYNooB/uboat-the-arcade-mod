@@ -1,0 +1,23 @@
+== ORIGINAL ==
+
+
+P1                                       P2   P3 P9                 P14
+--                                       --   -- --                 ---
+Initial Prices La Rochelle         14458,00 0,00 SetPriceMultiplier Port=La Rochelle Port;Arguments=Leader,2.0
+Resource Shortages Bergen 1        15964,00 0,00 SetPriceMultiplier Port=Bergen Port;Arguments=Fuel,1.25,Utility,1.25,Torpedo,1.25,Ammo,1.25,Exotic Goods,3.0,Recruits,1.25,Leader,1.5,Engineer,1.5,Radioman,1.5
+Resource Shortages Bergen 2        16268,00 0,00 SetPriceMultiplier Port=Bergen Port;Arguments=Fuel,1.5,Utility,1.5,Torpedo,1.5,Ammo,1.5,Exotic Goods,3.0,Recruits,2.0,Leader,2.0,Engineer,2.0,Radioman,2.0
+Resource Shortages Kiel 1          15964,00 0,00 SetPriceMultiplier Port=Port of Kiel;Arguments=Fuel,1.25,Utility,1.25,Torpedo,1.25,Ammo,1.25,Exotic Goods,3.0,Recruits,1.25,Leader,1.5,Engineer,1.5,Radioman,1.5
+Resource Shortages Kiel 2          16268,00 0,00 SetPriceMultiplier Port=Port of Kiel;Arguments=Fuel,1.5,Utility,1.5,Torpedo,1.5,Ammo,1.5,Exotic Goods,3.0,Recruits,2.0,Leader,2.0,Engineer,2.0,Radioman,2.0
+Resource Shortages La Rochelle     15964,00 0,00 SetPriceMultiplier Port=La Rochelle Port;Arguments=Fuel,1.25,Utility,1.25,Torpedo,1.25,Ammo,1.25,Exotic Goods,3.0,Recruits,1.25,Leader,2.5,Engineer,1.5,Radioman,1.5
+Resource Shortages La Spezia 1     15964,00 0,00 SetPriceMultiplier Port=La Spezia Port;Arguments=Fuel,1.25,Utility,1.25,Torpedo,1.25,Ammo,1.25,Exotic Goods,3.0,Recruits,1.25,Leader,1.5,Engineer,1.5,Radioman,1.5
+Resource Shortages La Spezia 2     16268,00 0,00 SetPriceMultiplier Port=La Spezia Port;Arguments=Fuel,1.5,Utility,1.5,Torpedo,1.5,Ammo,1.5,Exotic Goods,3.0,Recruits,2.0,Leader,2.0,Engineer,2.0,Radioman,2.0
+Resource Shortages Wilhelmshaven 1 15964,00 0,00 SetPriceMultiplier Port=Wilhelmshaven Port;Arguments=Fuel,1.25,Utility,1.25,Torpedo,1.25,Ammo,1.25,Exotic Goods,3.0,Recruits,1.25,Leader,1.5,Engineer,1.5,Radioman,1.5
+Resource Shortages Wilhelmshaven 2 16268,00 0,00 SetPriceMultiplier Port=Wilhelmshaven Port;Arguments=Fuel,1.5,Utility,1.5,Torpedo,1.5,Ammo,1.5,Exotic Goods,3.0,Recruits,2.0,Leader,2.0,Engineer,2.0,Radioman,2.0
+Siege of La Rochelle               16325,00 0,00 SetPriceMultiplier Port=La Rochelle Port;Arguments=Fuel,8.0,Utility,8.0,Torpedo,8.0,Ammo,16.0,Exotic Goods,16.0,Recruits,8.0,Leader,8.0,Engineer,4.0,Radioman,8.0
+Supply Chains Collapse La Rochelle 16268,00 0,00 SetPriceMultiplier Port=La Rochelle Port;Arguments=Fuel,2.0,Utility,2.0,Torpedo,2.0,Ammo,4.0,Exotic Goods,4.0,Recruits,2.0,Leader,3.0,Engineer,2.0,Radioman,2.0
+
+
+
+== MOD ==
+
+

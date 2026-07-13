@@ -1,0 +1,84 @@
+[h1]UBoat the Arcade Mod[/h1]
+
+Transform UBOAT into a high-octane arcade experience inspired by classic U-Boat sims like 'Das Boot'. This mod strips away the complexity and brings pure submarine action to the forefront.
+
+[h2]⚡ Major Changes[/h2]
+
+[h3]Fast-Paced Gameplay[/h3]
+[list]
+[*]Torpedo reload time: [b]1 second[/b] (instead of 8-14 seconds)
+[*]Navigation fixes: instant
+[*]No ammunition costs
+[*]Fuel, ammo, and supplies: unlimited/near-infinite
+[*]Fast Travel food consumption: 0
+[/list]
+
+[h3]Arcade Combat[/h3]
+[list]
+[*]All torpedoes: 50 damage, 0% dud chance, 40km range, cost = free
+[*]All artillery: 0.1s reload time, extreme range & damage
+[*]All ammunition: dramatically increased damage output
+[*]AA weapons extremely effective vs ships
+[/list]
+
+[h3]Maintenance & Supplies[/h3]
+[list]
+[*]No crew discipline loss or stress buildup
+[*]Hunger: no discipline penalties
+[*]Oxygen generation: extremely high
+[*]Electricity recharges instantly
+[*]Bleeding/diseases: nearly instant recovery
+[*]Kitchen consumption: 0
+[/list]
+
+[h3]Upgrades & Research[/h3]
+[list]
+[*]All research tasks: [b]1 day[/b] (instead of 5-16 days)
+[*]Equipment transfer: instant
+[*]Ship upgrades: instant
+[/list]
+
+[h3]Submarine Performance[/h3]
+[list]
+[*]Engine noise: 0 (complete stealth)
+[*]Diesel/Electric fuel usage: 0
+[*]Diving speed & maneuverability: enhanced
+[*]Sonar/sight ranges: massively increased
+[/list]
+
+[h2]🎯 Playstyle[/h2]
+
+This mod is perfect for:
+[list]
+[*]Players who want arcade action over simulation
+[*]Those tired of grinding and logistics
+[*]Fans of fast-paced tactical gameplay
+[*]Anyone wanting 'Das Boot' vibes without the tedium
+[/list]
+
+[h2]📋 Compatibility[/h2]
+
+Supports UBOAT version [b]2026.1[/b] (including Distant Coasts DLC with Type IX U-boats)
+
+[h2]⚠️ Note[/h2]
+
+This is a total arcade conversion. Expect unlimited resources, instant repairs, and pure combat focus. The sim stays home—this is pure submarine action.
+
+[h3]Known Issue: AA Weapon Balance[/h3]
+Currently, small-calibre AA guns (20mm and above) significantly outperform deck guns in direct ship combat. This is being evaluated and may be rebalanced in a future update to restore deck guns as the primary anti-ship weapon. For now, expect AA weapons to be highly effective against surface targets.
+
+[h2]🗑️ After Updating – Clear Game Cache[/h2]
+
+If the mod doesn't seem to take effect after an update, you need to [b]manually delete the game's temporary folders[/b]. UBOAT caches processed data and won't pick up mod changes until the cache is cleared. Do this after each update.
+
+Delete (or empty) the following folders — they are recreated automatically on next launch:
+[list]
+[*][code]%UserProfile%\AppData\LocalLow\Deep Water Studio\UBOAT\Temp[/code]
+[*][code]%UserProfile%\AppData\LocalLow\Deep Water Studio\UBOAT\Cache[/code]
+[*][code]%UserProfile%\AppData\LocalLow\Deep Water Studio\UBOAT\Data Sheets[/code]
+[/list]
+[b]How to get there quickly:[/b] Press [b]Win + R[/b], paste the path (replace [b]%UserProfile%[/b] with your Windows username or just type it as-is), press Enter.
+
+[hr][/hr]
+
+Enjoy unlimited warfare! ⚓

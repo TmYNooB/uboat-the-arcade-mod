@@ -1,0 +1,312 @@
+[
+  {
+    "Id": "Ammo Small Calibre HE",
+    "Changed": [
+      {
+        "Col": "P2",
+        "Original": "Cargo, Ammo Small Calibre, HE, Ammo, Goods, Purpose:Ammunition",
+        "Mod": "Cargo, Ammo Small Calibre, HE, Ammo, Purpose:Ammunition"
+      },
+      {
+        "Col": "P3",
+        "Original": "1",
+        "Mod": ""
+      },
+      {
+        "Col": "P14",
+        "Original": "0.09",
+        "Mod": "1"
+      },
+      {
+        "Col": "P15",
+        "Original": "3000",
+        "Mod": "4000"
+      }
+    ]
+  },
+  {
+    "Id": "Ammo Small Calibre AP",
+    "Changed": [
+      {
+        "Col": "P2",
+        "Original": "Cargo, Ammo Small Calibre, AP, Ammo, Goods, Purpose:Ammunition",
+        "Mod": "Cargo, Ammo Small Calibre, AP, Ammo, Purpose:Ammunition"
+      },
+      {
+        "Col": "P3",
+        "Original": "1",
+        "Mod": ""
+      },
+      {
+        "Col": "P14",
+        "Original": "0.09",
+        "Mod": "1"
+      },
+      {
+        "Col": "P15",
+        "Original": "3000",
+        "Mod": "4000"
+      }
+    ]
+  },
+  {
+    "Id": "Ammo Small Calibre Blank",
+    "Changed": [
+      {
+        "Col": "P3",
+        "Original": "1",
+        "Mod": ""
+      },
+      {
+        "Col": "P14",
+        "Original": "0.09",
+        "Mod": "1"
+      },
+      {
+        "Col": "P15",
+        "Original": "3000",
+        "Mod": "4000"
+      }
+    ]
+  },
+  {
+    "Id": "Ammo Small Calibre SS",
+    "Changed": [
+      {
+        "Col": "P3",
+        "Original": "20",
+        "Mod": ""
+      },
+      {
+        "Col": "P14",
+        "Original": "9",
+        "Mod": "1"
+      },
+      {
+        "Col": "P15",
+        "Original": "40",
+        "Mod": "4000"
+      }
+    ]
+  },
+  {
+    "Id": "Ammo Large Calibre HE",
+    "Changed": [
+      {
+        "Col": "P2",
+        "Original": "Cargo, Ammo Large Calibre, HE, Ammo, Goods, Purpose:Ammunition",
+        "Mod": "Cargo, Ammo Large Calibre, HE, Ammo, Purpose:Ammunition"
+      },
+      {
+        "Col": "P3",
+        "Original": "20",
+        "Mod": ""
+      },
+      {
+        "Col": "P14",
+        "Original": "9",
+        "Mod": "1"
+      },
+      {
+        "Col": "P15",
+        "Original": "40",
+        "Mod": "4000"
+      },
+      {
+        "Col": "P16",
+        "Original": "MinCalibre = 35, MaxCalibre = 203",
+        "Mod": "MinCalibre = 70, MaxCalibre = 203"
+      }
+    ]
+  },
+  {
+    "Id": "Ammo Large Calibre AP",
+    "Changed": [
+      {
+        "Col": "P2",
+        "Original": "Cargo, Ammo Large Calibre, AP, Ammo, Goods, Purpose:Ammunition",
+        "Mod": "Cargo, Ammo Large Calibre, AP, Ammo, Purpose:Ammunition"
+      },
+      {
+        "Col": "P3",
+        "Original": "20",
+        "Mod": ""
+      },
+      {
+        "Col": "P14",
+        "Original": "9",
+        "Mod": "1"
+      },
+      {
+        "Col": "P15",
+        "Original": "40",
+        "Mod": "4000"
+      },
+      {
+        "Col": "P16",
+        "Original": "MinCalibre = 35, MaxCalibre = 203",
+        "Mod": "MinCalibre = 70, MaxCalibre = 203"
+      }
+    ]
+  },
+  {
+    "Id": "Ammo Large Calibre Blank",
+    "Changed": [
+      {
+        "Col": "P3",
+        "Original": "5",
+        "Mod": ""
+      },
+      {
+        "Col": "P14",
+        "Original": "9",
+        "Mod": "1"
+      },
+      {
+        "Col": "P15",
+        "Original": "40",
+        "Mod": "4000"
+      },
+      {
+        "Col": "P16",
+        "Original": "MinCalibre = 35, MaxCalibre = 203",
+        "Mod": "MinCalibre = 70, MaxCalibre = 203"
+      }
+    ]
+  },
+  {
+    "Id": "Ammo Large Calibre Blank HE",
+    "Changed": [
+      {
+        "Col": "P3",
+        "Original": "5",
+        "Mod": ""
+      },
+      {
+        "Col": "P14",
+        "Original": "9",
+        "Mod": "1"
+      },
+      {
+        "Col": "P15",
+        "Original": "40",
+        "Mod": "4000"
+      },
+      {
+        "Col": "P16",
+        "Original": "MinCalibre = 35, MaxCalibre = 203",
+        "Mod": "MinCalibre = 70, MaxCalibre = 203"
+      }
+    ]
+  },
+  {
+    "Id": "Ammo Large Calibre AA",
+    "Changed": [
+      {
+        "Col": "P3",
+        "Original": "20",
+        "Mod": ""
+      },
+      {
+        "Col": "P14",
+        "Original": "9",
+        "Mod": "1"
+      },
+      {
+        "Col": "P15",
+        "Original": "40",
+        "Mod": "4000"
+      },
+      {
+        "Col": "P16",
+        "Original": "MinCalibre = 35, MaxCalibre = 203",
+        "Mod": "MinCalibre = 70, MaxCalibre = 203"
+      }
+    ]
+  },
+  {
+    "Id": "Ammo Large Calibre SS",
+    "Changed": [
+      {
+        "Col": "P3",
+        "Original": "20",
+        "Mod": ""
+      },
+      {
+        "Col": "P14",
+        "Original": "9",
+        "Mod": "1"
+      },
+      {
+        "Col": "P15",
+        "Original": "40",
+        "Mod": "4000"
+      },
+      {
+        "Col": "P16",
+        "Original": "MinCalibre = 35, MaxCalibre = 203",
+        "Mod": "MinCalibre = 70, MaxCalibre = 203"
+      }
+    ]
+  },
+  {
+    "Id": "Large Calibre Ammunition Storage",
+    "Changed": [
+      {
+        "Col": "P16",
+        "Original": "ItemsMassLimit = 270",
+        "Mod": "ItemsMassLimit = 9999999"
+      }
+    ]
+  },
+  {
+    "Id": "Small Calibre Ammunition Storage",
+    "Changed": [
+      {
+        "Col": "P16",
+        "Original": "ItemsMassLimit = 270",
+        "Mod": "ItemsMassLimit = 9999999"
+      }
+    ]
+  },
+  {
+    "Id": "Flak Ammunition Storage",
+    "Changed": [
+      {
+        "Col": "P16",
+        "Original": "ItemsMassLimit = 750",
+        "Mod": "ItemsMassLimit = 9999999"
+      }
+    ]
+  },
+  {
+    "Id": "Ammo Storage",
+    "Changed": [
+      {
+        "Col": "P3",
+        "Original": "0",
+        "Mod": ""
+      }
+    ]
+  },
+  {
+    "Id": "Ammo Small Calibre HE - 20 mm",
+    "Changed": [
+      {
+        "Col": "P16",
+        "Original": "DamageRadius = 6, Damage = 0.017, CrewDamage = 0.65, DamageEffectsRadius = 0.2, DamageEffectsIntensity = 1.0,  InitialVelocity = 900, MinDetonationVelocity = 150, ArmorPiercing = 0.0, Mass = 0.12, SelfDestructDelay = 3.5, ProximityExplosion = 0, TracerDuration = 26, FireChance = 1.0",
+        "Mod": "DamageRadius = 6, Damage = 8, CrewDamage = 0.65, DamageEffectsRadius = 0.2, DamageEffectsIntensity = 1.0,  InitialVelocity = 900, MinDetonationVelocity = 150, ArmorPiercing = 0.0, Mass = 0.12, SelfDestructDelay = 3.5, ProximityExplosion = 0, TracerDuration = 26, FireChance = 1.0"
+      }
+    ]
+  },
+  {
+    "Id": "Ammo Small Calibre AP - 20 mm",
+    "Changed": [
+      {
+        "Col": "P16",
+        "Original": "DamageRadius = 4.5,Damage = 0.024, CrewDamage = 0.6, DamageEffectsRadius = 0.1, DamageEffectsIntensity = 1.0, InitialVelocity = 900, MinDetonationVelocity = 150, ArmorPiercing = 0.5, Mass = 0.12, SelfDestructDelay = 0, ProximityExplosion = 0, TracerDuration = 26, FireChance = 0.25",
+        "Mod": "DamageRadius = 4.5,Damage = 11.2, CrewDamage = 0.6, DamageEffectsRadius = 0.1, DamageEffectsIntensity = 1.0, InitialVelocity = 900, MinDetonationVelocity = 150, ArmorPiercing = 0.5, Mass = 0.12, SelfDestructDelay = 0, ProximityExplosion = 0, TracerDuration = 26, FireChance = 0.25"
+      }
+    ]
+  }
+]
