@@ -16,6 +16,11 @@ Status legend: [ ] open, [x] done
   - Original vs. Mod im Detail vergleichen (pro Torpedo-ID alle P-Felder mit Abweichung auflisten)
   - Falls notwendig, Speed/Range-Werte so anpassen, dass die Auswahl im UI wieder eindeutig verfuegbar ist
 
+- [ ] Crew-Groesse pro Spielerboot verifizieren und modbar machen
+  - Original in `Entities.xlsx` / `Types` gegen Player-Varianten pruefen (z. B. Type IIA (Player), Type VIIC (Player))
+  - Zielwerte fuer Startcrew je spielbarem Typ festlegen
+  - Mod-Override nur fuer betroffene IDs eintragen und ingame gegenpruefen
+
 - [x] Tankwerte im Mod korrigieren
   - Fuel Tank IIA von 11000000 auf 27500 gesetzt
   - Fuel Tank IID von 49800000 auf 78000 gesetzt
