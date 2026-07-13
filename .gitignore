@@ -17,3 +17,6 @@ Data Sheets/*.dat
 
 # Local workshop upload working data
 .steam-upload/
+
+# Local secret-audit output
+Source/secret-audit-report.json
