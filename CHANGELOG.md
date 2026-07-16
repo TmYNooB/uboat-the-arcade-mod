@@ -2,6 +2,23 @@
 
 All notable changes to this mod are documented in this file.
 
+## 1.7.19 - 2026-07-16 (INCOMING DAMAGE TUNING)
+
+### Easy damage reduced further
+
+- General.xlsx / Settings /DamageDifficulty / Multiplier (Easy): 0.03 -> 0.01
+
+### Hull absorption increased
+
+- General.xlsx / Settings /Damages / Hull Damage Absorption: 0.5 -> 0.9
+
+### Script synchronization
+
+- update-mod.ps1 updated to keep `DamageDifficulty Easy = 0.01`
+- update-mod.ps1 updated to keep `Hull Damage Absorption = 0.9`
+
+---
+
 ## 1.7.18 - 2026-07-16 (TYPE VIIC PLAYER OVERRIDE REMOVED + DIESEL COMPRESSOR TRIAGE)
 
 ### Removed stale Type VII player override

@@ -404,7 +404,7 @@ for ($r = 1; $r -le $wsG.Dimension.Rows; $r++) {
         $wsG.Cells[$r, 2].Value = "1.00"
     }
     if ($id -eq "Hull Damage Absorption") {
-        $wsG.Cells[$r, 2].Value = "0.5"
+        $wsG.Cells[$r, 2].Value = "0.9"
     }
     if ($id -eq "Hull Damage Scale") {
         $wsG.Cells[$r, 2].Value = "0.01"
@@ -413,7 +413,7 @@ for ($r = 1; $r -le $wsG.Dimension.Rows; $r++) {
         $wsG.Cells[$r, 2].Value = "0.1"
     }
     if ($inDamageDifficultySection -and -not $multiplierRowFixed -and $id -eq "Multiplier") {
-        $wsG.Cells[$r, 2].Value = "0.03"
+        $wsG.Cells[$r, 2].Value = "0.01"
         $multiplierRowFixed = $true  # Nur erste Multiplier-Zeile nach /DamageDifficulty anpassen
     }
 }
@@ -428,10 +428,10 @@ if (-not $damageDifficultySectionExists) {
     $wsG.Cells[$insertRow, 4].Value = "Hard"
     [int]$multiplierRow = $insertRow + 1
     $wsG.Cells[$multiplierRow, 1].Value = "Multiplier"
-    $wsG.Cells[$multiplierRow, 2].Value = "0.03"
+    $wsG.Cells[$multiplierRow, 2].Value = "0.01"
     $wsG.Cells[$multiplierRow, 3].Value = "0.6"
     $wsG.Cells[$multiplierRow, 4].Value = "1"
-    Write-Host "  ✅ /DamageDifficulty-Sektion neu ergänzt (existierte noch nicht) und Easy auf 0.03 gesetzt"
+    Write-Host "  ✅ /DamageDifficulty-Sektion neu ergänzt (existierte noch nicht) und Easy auf 0.01 gesetzt"
 }
 else {
     Write-Host "  ℹ️  /DamageDifficulty-Sektion existiert bereits, Easy-Wert direkt aktualisiert"
@@ -439,8 +439,8 @@ else {
 
 $pkg.Save(); $pkg.Dispose()
 Write-Host "  ✅ Trade/Upgrade-Faktoren auf 0.25 gesetzt"
-Write-Host "  ✅ Hull Damage Absorption auf 0.5, Hull Damage Scale auf 0.01/0.1 gesetzt"
-Write-Host "  ✅ Easy DamageDifficulty auf 0.03 gesetzt"
+Write-Host "  ✅ Hull Damage Absorption auf 0.9, Hull Damage Scale auf 0.01/0.1 gesetzt"
+Write-Host "  ✅ Easy DamageDifficulty auf 0.01 gesetzt"
 
 # ==============================================================================
 # 6. Entities.xlsx / Equipment — Finales Rebalancing
