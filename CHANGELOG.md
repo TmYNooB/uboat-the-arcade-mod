@@ -2,6 +2,30 @@
 
 All notable changes to this mod are documented in this file.
 
+## 1.7.18 - 2026-07-16 (TYPE VIIC PLAYER OVERRIDE REMOVED + DIESEL COMPRESSOR TRIAGE)
+
+### Removed stale Type VII player override
+
+- Entities.xlsx / Types: removed mod override row `Type VIIC (Player)`
+- Effect: Type VII C player stats now fall back to vanilla base row instead of the old extreme mod row
+
+### Diesel compressor investigation (Type II / VII / IX)
+
+- Original player slots for Type IIA/IID/VIIB/VIIC/VIIC41 all use the same compressor slot IDs:
+  - `Additional Compressor`
+  - `Diesel Engine Compressor`
+- In current original Data Sheets, no `Type IX` rows/sections are present in `Entities.xlsx` (`Types`/`Slots`)
+- Mod compressor source of the overpowered behavior is in `Entities.xlsx / Equipment`:
+  - `Junkers Diesel Compressor` P16 `OxygenCompression = 800` (original is `8`)
+
+### Compressor oxygen values normalized
+
+- Entities.xlsx / Equipment: Junkers Diesel Compressor OxygenCompression 800 -> 40
+- Entities.xlsx / Equipment: Electric Compressor OxygenCompression remains 40 (confirmed)
+- update-mod.ps1 synchronized: both compressor P16 targets set to OxygenCompression = 40
+
+---
+
 ## 1.7.17 - 2026-07-16 (BATTERY/ENGINE CHARGING TUNING + CAMOUFLAGE DATA CHECK)
 
 ### Battery and engine charging values normalized

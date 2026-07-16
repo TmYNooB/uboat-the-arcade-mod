@@ -483,6 +483,7 @@ Set-EquipP16 "Diesel Engines" "/Velocity +10, Noise = 0.0, FuelUsage = 0.0, Ener
 Set-EquipP16 "Diesel Engines IIA" "/Velocity +10, Noise = 0.0, FuelUsage = 0.0, EnergyUsage = -1.0, SmokeVisibility = 0.0, MaxGearChangeDelay = 7"
 Set-EquipP16 "Electric Engines" "/Velocity +10, Noise = 0.0, FuelUsage = -1.0, EnergyUsage = 0.0, MaxGearChangeDelay = 7"
 Set-EquipP16 "Electric Engines IIA" "/Velocity +10, Noise = 0.0, FuelUsage = -1.0, EnergyUsage = 0.0, MaxGearChangeDelay = 7"
+Set-EquipP16 "Junkers Diesel Compressor" "FuelUsage = 0.0, OxygenCompression = 40, Noise = 0.0, OxygenUsage = 0.0"
 Set-EquipP16 "Electric Compressor" "EnergyUsage = 0.0, OxygenCompression = 40, Noise = 0.0, OxygenUsage = 0.0"
 
 # AA-Guns stärker machen (Reload/Range hoch)
