@@ -2,6 +2,29 @@
 
 All notable changes to this mod are documented in this file.
 
+## 1.7.17 - 2026-07-16 (BATTERY/ENGINE CHARGING TUNING + CAMOUFLAGE DATA CHECK)
+
+### Battery and engine charging values normalized
+
+- General.xlsx / Settings: Energy Recharge Rate 100,00 -> 1,00
+- Entities.xlsx / Equipment: Diesel Engines EnergyUsage -0.55 -> -1.0
+- Entities.xlsx / Equipment: Diesel Engines IIA EnergyUsage -0.55 -> -1.0
+- Entities.xlsx / Equipment: Electric Engines FuelUsage -10.0 -> -1.0
+- Entities.xlsx / Equipment: Electric Engines IIA FuelUsage -10.0 -> -1.0
+
+### Script sync (avoid reverting on next generator run)
+
+- update-mod.ps1 now applies the same values for Energy Recharge Rate and engine P16 strings
+- update-mod.ps1 now sets both Diesel Engines and Diesel Engines IIA in the final Set-EquipP16 pass
+
+### Camouflage bug triage (data-side)
+
+- Original uses dedicated camouflage content in Entities.xlsx / Slots + Equipment and Sandbox.xlsx / Tasks (Research Camouflage ...)
+- Mod does not override camouflage rows in Entities / Equipment or Sandbox / Tasks
+- Mod Entities.xlsx only contains Types + Equipment sheets (no Slots override), so camouflage slot/task behavior falls back to vanilla data
+
+---
+
 ## 1.7.16 - 2026-07-11 (CLEAN BASELINE RESTORE + CRITICAL SCRIPT BUG FIXES)
 
 ### Root Cause: Automated Recovery Scripts Violated Core Modding Convention

@@ -216,14 +216,14 @@ Add-Or-Skip "Ammo Small Calibre AP - 45 mm" $orig @{ 3 = ""; 14 = "0.01"; 15 = "
 $orig = Get-OrigRow $origLookup "Diesel Engines IIA"
 Add-Or-Skip "Diesel Engines IIA" $orig @{
     3  = "";
-    16 = "/Velocity +10, Noise = 0.0, FuelUsage = 0.0, EnergyUsage = -0.55, SmokeVisibility = 0.0, MaxGearChangeDelay = 7"
+    16 = "/Velocity +10, Noise = 0.0, FuelUsage = 0.0, EnergyUsage = -1.0, SmokeVisibility = 0.0, MaxGearChangeDelay = 7"
 }
 
 # Electric Engines IIA (Noise=0, Velocity+10 wie andere Electric)
 $orig = Get-OrigRow $origLookup "Electric Engines IIA"
 Add-Or-Skip "Electric Engines IIA" $orig @{
     3  = "";
-    16 = "/Velocity +10, Noise = 0.0, FuelUsage = -10.0, EnergyUsage = 0.0, MaxGearChangeDelay = 7"
+    16 = "/Velocity +10, Noise = 0.0, FuelUsage = -1.0, EnergyUsage = 0.0, MaxGearChangeDelay = 7"
 }
 
 # --- TREIBSTOFFTANKS --- #
@@ -399,6 +399,10 @@ for ($r = 1; $r -le $wsG.Dimension.Rows; $r++) {
     if ($id -eq "Upgrade Duration Factor (s/budget unit)") {
         $wsG.Cells[$r, 2].Value = "0.25"
     }
+    if ($id -eq "Energy Recharge Rate") {
+        # Keep recharge close to vanilla to avoid breaking charge/discharge gameplay logic.
+        $wsG.Cells[$r, 2].Value = "1.00"
+    }
     if ($id -eq "Hull Damage Absorption") {
         $wsG.Cells[$r, 2].Value = "0.5"
     }
@@ -475,8 +479,10 @@ Set-EquipP16 "Fuel Tank IID" "ItemsMassLimit = 78000"
 
 # E-Motoren/Kompressor auf stabile Arcade-Werte setzen
 # Hinweis: Negativer FuelUsage-Exploit scheint in neueren Versionen nicht mehr verlässlich zu greifen.
-Set-EquipP16 "Electric Engines" "/Velocity +10, Noise = 0.0, FuelUsage = -10.0, EnergyUsage = 0.0, MaxGearChangeDelay = 7"
-Set-EquipP16 "Electric Engines IIA" "/Velocity +10, Noise = 0.0, FuelUsage = -10.0, EnergyUsage = 0.0, MaxGearChangeDelay = 7"
+Set-EquipP16 "Diesel Engines" "/Velocity +10, Noise = 0.0, FuelUsage = 0.0, EnergyUsage = -1.0, SmokeVisibility = 0.0, MaxGearChangeDelay = 7"
+Set-EquipP16 "Diesel Engines IIA" "/Velocity +10, Noise = 0.0, FuelUsage = 0.0, EnergyUsage = -1.0, SmokeVisibility = 0.0, MaxGearChangeDelay = 7"
+Set-EquipP16 "Electric Engines" "/Velocity +10, Noise = 0.0, FuelUsage = -1.0, EnergyUsage = 0.0, MaxGearChangeDelay = 7"
+Set-EquipP16 "Electric Engines IIA" "/Velocity +10, Noise = 0.0, FuelUsage = -1.0, EnergyUsage = 0.0, MaxGearChangeDelay = 7"
 Set-EquipP16 "Electric Compressor" "EnergyUsage = 0.0, OxygenCompression = 40, Noise = 0.0, OxygenUsage = 0.0"
 
 # AA-Guns stärker machen (Reload/Range hoch)
