@@ -412,6 +412,9 @@ for ($r = 1; $r -le $wsG.Dimension.Rows; $r++) {
     if ($id -eq "Hull Damage Scale (Without Damage Control)") {
         $wsG.Cells[$r, 2].Value = "0.86"
     }
+    if ($id -eq "Player Ship Damage Scale") {
+        $wsG.Cells[$r, 2].Value = "0.1"
+    }
     if ($inDamageDifficultySection -and -not $multiplierRowFixed -and $id -eq "Multiplier") {
         $wsG.Cells[$r, 2].Value = "0.01"
         $multiplierRowFixed = $true  # Nur erste Multiplier-Zeile nach /DamageDifficulty anpassen
@@ -440,6 +443,7 @@ else {
 $pkg.Save(); $pkg.Dispose()
 Write-Host "  ✅ Trade/Upgrade-Faktoren auf 0.25 gesetzt"
 Write-Host "  ✅ Hull Damage Absorption/Scale auf Vanilla (0.2 / 0.43 / 0.86) gesetzt"
+Write-Host "  ✅ Player Ship Damage Scale auf 0.1 gesetzt"
 Write-Host "  ✅ Easy DamageDifficulty auf 0.01 gesetzt"
 
 # ==============================================================================

@@ -4,7 +4,11 @@ Status legend: [ ] open, [x] done
 
 ## Priority Tasks
 
-- [ ] Damage ueberpruefen (Parameter-Semantik vs. aktuelle Mod-Kalkulation)
+- [ ] FLAK43U muss gebufft werden
+  - Parameter und Zielwerte fuer Damage/Reload/Handling festlegen
+  - Mod-Werte in Entities.xlsx / Equipment anpassen und ingame pruefen
+
+- [x] Damage ueberpruefen (Parameter-Semantik vs. aktuelle Mod-Kalkulation)
   - Referenz: https://steamcommunity.com/app/494840/discussions/0/1747895838223189009/
   - Aussage laut Referenz pruefen:
     - Hull Damage Absorption: Anteil, der am NPC-Rumpf absorbiert/negiert wird, bevor Restschaden dahinterliegende Objekte trifft
@@ -12,8 +16,8 @@ Status legend: [ ] open, [x] done
     - Hull Damage Scale (Without Damage Control): Wie oben, aber nach Verlassen des Schiffs durch die Crew
     - Hull Flooding Scale: Faktor fuer Flutungsgeschwindigkeit in NPC-Kompartments
     - Player Ship Damage Scale: Relativer Schadensfaktor Player-Schiff vs. NPC-Schiffe (wegen unterschiedlicher Schadensmodelle)
-  - Pruefen, ob daraus folgt, dass unsere bisherigen Schadenskalkulationen fachlich falsch waren
-  - Bei Bestaetigung: neue Ziel-Formeln fuer Player/NPC trennen und Werte in General.xlsx neu herleiten
+  - Befund bestaetigt: kleinerer Wert bei Player Ship Damage Scale reduziert eingehenden Schaden am Player-Schiff
+  - Schadenslogik fuer aktuelle Mod-Kalkulation verifiziert
 
 - [x] Torpedos explodieren im/nahe U-Boot untersuchen
   - MinPistolActivationAngle bereits auf 10 Grad korrigiert (besserer Zündungswinkel)
