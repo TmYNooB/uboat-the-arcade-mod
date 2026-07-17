@@ -1,6 +1,6 @@
 {
     "name": "UBoat the Arcade Mod",
-    "version": "1.7.21",
+    "version": "1.7.22",
     "description": "Transform UBOAT into a high-octane arcade experience inspired by classic U-Boat sims like Das Boot!\n\nFAST-PACED GAMEPLAY: Torpedo reload 1 sec | Navigation instant | No ammo costs | Unlimited fuel and supplies | Zero food consumption\n\nARCADE COMBAT: All torpedoes 50 damage, 0% duds, 40km range | Artillery 0.1s reload, extreme range | All ammo massively buffed | AA weapons are highly effective vs ships\n\nNO GRINDING: Crew discipline 0 loss | Hunger no penalties | Oxygen generation very high | Electricity recharges instantly | Diseases heal quickly\n\nINSTANT UPGRADES: Research tasks 1 day (vs 5-16) | Equipment transfer instant | Ship upgrades instant\n\nSTEALTH MASTERS: Engine noise 0 | Fuel usage 0 | Diving enhanced | Sonar and sight massively increased\n\nPerfect for arcade action fans tired of grinding. Pure submarine combat!\n\nSupports UBOAT 2026.1 (Distant Coasts DLC with Type IX U-boats)",
     "author": null,
     "supportedGameVersions": [

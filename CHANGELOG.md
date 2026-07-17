@@ -2,6 +2,14 @@
 
 All notable changes to this mod are documented in this file.
 
+## 1.7.22 - 2026-07-17 (DAMAGE FACTOR INSPECTION HELPER)
+
+### Damage factor analysis helper added
+
+- Added Source/inspect-damage-factors.ps1 to calculate incoming-damage reduction factors versus vanilla
+- Script compares current values and rollback "valuesBefore" snapshot for Hull Damage Scale / Without Damage Control / Absorption
+- Script also includes the active Easy difficulty multiplier in the same calculation path
+
 ## 1.7.21 - 2026-07-17 (NUMBER FORMAT AUDIT HARDENING)
 
 ### Numeric separator audit expanded
