@@ -404,13 +404,13 @@ for ($r = 1; $r -le $wsG.Dimension.Rows; $r++) {
         $wsG.Cells[$r, 2].Value = "1.00"
     }
     if ($id -eq "Hull Damage Absorption") {
-        $wsG.Cells[$r, 2].Value = "0.9"
+        $wsG.Cells[$r, 2].Value = "0.2"
     }
     if ($id -eq "Hull Damage Scale") {
-        $wsG.Cells[$r, 2].Value = "0.01"
+        $wsG.Cells[$r, 2].Value = "0.43"
     }
     if ($id -eq "Hull Damage Scale (Without Damage Control)") {
-        $wsG.Cells[$r, 2].Value = "0.1"
+        $wsG.Cells[$r, 2].Value = "0.86"
     }
     if ($inDamageDifficultySection -and -not $multiplierRowFixed -and $id -eq "Multiplier") {
         $wsG.Cells[$r, 2].Value = "0.01"
@@ -439,7 +439,7 @@ else {
 
 $pkg.Save(); $pkg.Dispose()
 Write-Host "  ✅ Trade/Upgrade-Faktoren auf 0.25 gesetzt"
-Write-Host "  ✅ Hull Damage Absorption auf 0.9, Hull Damage Scale auf 0.01/0.1 gesetzt"
+Write-Host "  ✅ Hull Damage Absorption/Scale auf Vanilla (0.2 / 0.43 / 0.86) gesetzt"
 Write-Host "  ✅ Easy DamageDifficulty auf 0.01 gesetzt"
 
 # ==============================================================================

@@ -2,6 +2,22 @@
 
 All notable changes to this mod are documented in this file.
 
+## 1.7.21 - 2026-07-17 (HULL DAMAGE VANILLA ROLLBACK)
+
+### Hull damage factors reset to vanilla
+
+- General.xlsx / Settings /Damages / Hull Damage Absorption: 0.999 -> 0.2
+- General.xlsx / Settings /Damages / Hull Damage Scale: 0.0001 -> 0.43
+- General.xlsx / Settings /Damages / Hull Damage Scale (Without Damage Control): 0.001 -> 0.86
+
+### Flooding factor verified
+
+- General.xlsx / Settings /Damages / Hull Flooding Scale confirmed unchanged at vanilla value 40000
+
+### Script synchronization
+
+- update-mod.ps1 updated to keep Hull Damage Absorption/Scale values at vanilla targets (0.2 / 0.43 / 0.86)
+
 ## 1.7.20 - 2026-07-17 (HULL DAMAGE TEST TUNING)
 
 ### Hull damage parameters tightened for test run
