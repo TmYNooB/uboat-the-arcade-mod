@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-07-17T14:15:39",
+  "file": "Data Sheets/General.xlsx",
+  "valuesBefore": {
+    "Hull Damage Scale": "0.01",
+    "Hull Damage Scale (Without Damage Control)": "0.1",
+    "Hull Damage Absorption": "0,9"
+  },
+  "requestedNewValues": {
+    "Hull Damage Scale": "0.0001",
+    "Hull Damage Scale (Without Damage Control)": "0.001",
+    "Hull Damage Absorption": "0.999"
+  }
+}

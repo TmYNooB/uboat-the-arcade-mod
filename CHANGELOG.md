@@ -2,6 +2,18 @@
 
 All notable changes to this mod are documented in this file.
 
+## 1.7.20 - 2026-07-17 (HULL DAMAGE TEST TUNING)
+
+### Hull damage parameters tightened for test run
+
+- General.xlsx / Settings /Damages / Hull Damage Absorption: 0.9 -> 0.999
+- General.xlsx / Settings /Damages / Hull Damage Scale: 0.01 -> 0.0001
+- General.xlsx / Settings /Damages / Hull Damage Scale (Without Damage Control): 0.1 -> 0.001
+
+### Rollback safety snapshot added
+
+- Added Source/rollback-hull-damage-values-2026-07-17.json with pre-change values for quick restore during testing
+
 ## 1.7.19 - 2026-07-16 (INCOMING DAMAGE TUNING)
 
 ### Easy damage reduced further
