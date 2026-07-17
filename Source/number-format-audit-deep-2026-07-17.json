@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-07-17T21:20:14",
+  "mode": "deep-token-scan",
+  "files": [],
+  "summary": {
+    "checkedFiles": 4,
+    "checkedSheets": 11,
+    "checkedRows": 488,
+    "checkedCells": 4422,
+    "checkedParameterValues": 1704,
+    "tokenSeparatorMismatches": 0,
+    "parameterTokenSeparatorMismatches": 0
+  }
+}
