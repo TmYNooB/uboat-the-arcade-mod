@@ -2,6 +2,31 @@
 
 All notable changes to this mod are documented in this file.
 
+## 1.7.24 - 2026-07-18 (STEAM RELEASE ROLLUP SINCE 1.7.19)
+
+### GAMEPLAY TUNING
+
+- General.xlsx / Settings /Damages / Hull Damage Absorption: 0.9 -> 0.999 -> 0.2
+- General.xlsx / Settings /Damages / Hull Damage Scale: 0.01 -> 0.0001 -> 0.43
+- General.xlsx / Settings /Damages / Hull Damage Scale (Without Damage Control): 0.1 -> 0.001 -> 0.86
+- Sandbox.xlsx / Tasks / Milk Cow I-X / Duration: 12 -> 1
+
+### AMMO / SCOPE
+
+- Entities.xlsx / Equipment / 43U / P16 / ReloadTime: 4.5 -> 0.1
+- Entities.xlsx / Equipment / 43U / P16 / Range: 3000 -> 5000
+- General.xlsx / Settings /Damages / Hull Flooding Scale verified unchanged at vanilla value 40000
+
+### BETROFFENE EINHEITEN
+
+- 43U (AA gun), Milk Cow I-X relocation tasks, global hull damage factors
+- Naval Academy data row verified: Send Officer To Naval Academy remains Duration=1 in mod data (vanilla=16)
+
+### SCOPE
+
+- Cumulative Steam release covering local test versions 1.7.20, 1.7.21, 1.7.22 and 1.7.23
+- update-mod.ps1 synchronized for 43U values, Milk Cow Duration=1 and hull damage target values
+
 ## 1.7.23 - 2026-07-18 (MILK COW DURATION TUNING + ACADEMY VERIFY)
 
 ### Milk Cow relocation duration reduced
