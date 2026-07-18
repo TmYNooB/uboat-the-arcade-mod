@@ -2,6 +2,31 @@
 
 All notable changes to this mod are documented in this file.
 
+## 1.7.26 - 2026-07-18 (88MM MAGAZINE ROLLBACK)
+
+### Deck gun burst behavior normalized
+
+- Entities.xlsx / Equipment / Artillery - 8.8 cm / P16 / MagazineSize: 4 -> 1
+
+### Script synchronization
+
+- update-mod.ps1 now keeps Artillery - 8.8 cm with MagazineSize = 1 in the final Set-EquipP16 pass
+
+## 1.7.25 - 2026-07-18 (43U SHELL CADENCE TUNING)
+
+### 43U shell cadence adjusted
+
+- Entities.xlsx / Equipment / 43U / P16 / SkippedShells: 3 -> 1
+
+### Script synchronization
+
+- update-mod.ps1 now keeps 43U with SkippedShells = 1 in the final Set-EquipP16 pass
+
+### Deck gun verification (8.8 cm)
+
+- Verified current mod behavior: Artillery - 8.8 cm uses MagazineSize = 4 and ReloadTime = 0.1
+- This combination explains the observed four-shot burst before reload
+
 ## 1.7.24 - 2026-07-18 (STEAM RELEASE ROLLUP SINCE 1.7.19)
 
 ### GAMEPLAY TUNING
