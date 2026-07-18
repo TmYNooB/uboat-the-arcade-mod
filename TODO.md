@@ -4,9 +4,10 @@ Status legend: [ ] open, [x] done
 
 ## Priority Tasks
 
-- [ ] FLAK43U muss gebufft werden
-  - Parameter und Zielwerte fuer Damage/Reload/Handling festlegen
-  - Mod-Werte in Entities.xlsx / Equipment anpassen und ingame pruefen
+- [x] FLAK43U buffen
+  - 43U in Entities.xlsx / Equipment / P16 angepasst: ReloadTime 4.5 -> 0.1, Range 3000 -> 5000
+  - update-mod.ps1 synchronisiert: Set-EquipP16 fuer 43U hinzugefuegt
+  - Changelog + Manifest-Version aktualisiert (1.7.22)
 
 - [x] Damage ueberpruefen (Parameter-Semantik vs. aktuelle Mod-Kalkulation)
   - Referenz: https://steamcommunity.com/app/494840/discussions/0/1747895838223189009/
@@ -25,16 +26,26 @@ Status legend: [ ] open, [x] done
   - DamageRadius: beabsichtigt auf 40 Meter (6x Original für Arcade-Effektivität)
   - Kandidaten für Restprobleme: Engine-Torpedozerstörung oder andere seltene Auslöser
 
-- [ ] Torpedo-Geschwindigkeitsauswahl verifizieren
-  - Meldung aufnehmen: Geschwindigkeit kann nicht mehr ausgewaehlt werden
-  - Pruefen, ob Torpedo-P16 in `Entities.xlsx` unterschiedliche Speed-Stufen noch enthaelt
-  - Original vs. Mod im Detail vergleichen (pro Torpedo-ID alle P-Felder mit Abweichung auflisten)
-  - Falls notwendig, Speed/Range-Werte so anpassen, dass die Auswahl im UI wieder eindeutig verfuegbar ist
+- [x] Torpedo-Geschwindigkeitsauswahl verifizieren
+  - T1 Pi1 und T2 Pi1 gegen Vanilla verglichen (P16): Speed-Stufen vorhanden, aber Ranges im Mod auf 40000 vereinheitlicht
+  - Speed-Werte sind sehr wahrscheinlich in kn (nicht km/h); 81 km/h entsprechen ca. 43.7 kn (naehe Speed2)
+  - Plausibler Befund: Spiel nutzt aktuell faktisch Standard/Speed2; aktuell als Low-Priority/First-World-Problem eingeordnet
 
-- [ ] Crew-Groesse pro Spielerboot verifizieren und modbar machen
-  - Original in `Entities.xlsx` / `Types` gegen Player-Varianten pruefen (z. B. Type IIA (Player), Type VIIC (Player))
-  - Zielwerte fuer Startcrew je spielbarem Typ festlegen
-  - Mod-Override nur fuer betroffene IDs eintragen und ingame gegenpruefen
+- [x] Crew-Groesse pro Spielerboot verifizieren und modbar machen
+  - Aktueller Befund: Type-Werte fallen derzeit auf Vanilla zurueck (kein direkter Type-Override im Mod)
+  - Vanilla geprueft: Type VIIC Crew=52, Type VIIC (Player) Crew=20
+  - Hinweis: pro Boot theoretisch modbar ueber Type-Override in Entities.xlsx / Types (jeweilige *(Player)-Zeile und Crew-Wert)
+
+- [x] Typ VIIC (nicht VIIC/41) auf Modding-Stand pruefen (inkl. weiterer Bootstypen)
+  - Type VIIC/VIIC41 aktuell nicht direkt in Mod-Types ueberschrieben (0 Treffer), daher fuer Type-Daten Vanilla-Fallback
+  - Vanilla Types geprueft: Type VIIC Crew=52, Type VIIC (Player) Crew=20
+  - Vanilla Slots geprueft: Type VIIC (Player) Conning Tower=Turm 0, Type VIIC41 (Player)=Turm IV
+  - Vollvergleich dokumentiert in Source/type-viic-vs-vanilla-2026-07-18.md
+
+- [x] Marineakademie-Forschung im Original finden und fehlende Forschungen im Mod identifizieren
+  - Verifiziert: `Send Officer To Naval Academy` ist im Mod vorhanden und auf Duration=1 (Vanilla=16)
+  - Sonstige Research-Tasks im Mod: keine verbleibenden Duration > 1 gefunden
+  - Auffaellig lang bleiben nur `Milk Cow I` bis `Milk Cow X` mit Duration=12 (wie Vanilla, keine Research-Tasks)
 
 - [x] Tankwerte im Mod korrigieren
   - Fuel Tank IIA von 11000000 auf 27500 gesetzt
@@ -51,9 +62,9 @@ Status legend: [ ] open, [x] done
   - Generator-Script mit Torpedo-Sektion aktualisiert
   - Parameter ist Wartungsintervall für Torpedo-Elektronik (nicht Nachladezeit)
 
-- [ ] General Damage Widerstand tunen
-  - General/Settings /Damages Werte fuer Player-Schadensaufnahme anpassen
-  - Optional /DamageDifficulty fuer Easy/Medium/Hard explizit setzen
+- [x] General Damage Widerstand tunen
+  - General/Settings /Damages Werte fuer Player-Schadensaufnahme wurden angepasst/getuned
+  - /DamageDifficulty wurde im Verlauf ebenfalls angepasst
 
 - [x] Savegame-Migration fuer Tankwerte geklaert (technisch + Vorgehen)
   - Savegames sind binaere `.save`-Dateien, kein einfacher Textpatch im Repo-Workflow

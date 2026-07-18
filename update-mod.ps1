@@ -268,9 +268,9 @@ $pkg.Save(); $pkg.Dispose()
 Write-Host "`n  Equipment-Änderungen gespeichert ✅"
 
 # ==============================================================================
-# 3. Sandbox.xlsx / Tasks — Submarine Pen Build Tasks auf 1 Tag reduzieren
+# 3. Sandbox.xlsx / Tasks — Submarine Pen + Milk Cow Tasks auf 1 Tag reduzieren
 # ==============================================================================
-Write-Host "`n=== Sandbox.xlsx: Submarine Pen Build Tasks ===" -ForegroundColor Cyan
+Write-Host "`n=== Sandbox.xlsx: Submarine Pen + Milk Cow Tasks ===" -ForegroundColor Cyan
 
 $origT = Import-Excel "$origPath\Sandbox.xlsx" -WorksheetName "Tasks" -NoHeader
 $origTLookup = @{}
@@ -324,7 +324,17 @@ $buildTasks = @(
     "Build Helgoland Submarine Pen",
     "Build Bergen Submarine Pen",
     "Build Brest Submarine Pen 1",
-    "Build Brest Submarine Pen 2"
+    "Build Brest Submarine Pen 2",
+    "Milk Cow I",
+    "Milk Cow II",
+    "Milk Cow III",
+    "Milk Cow IV",
+    "Milk Cow V",
+    "Milk Cow VI",
+    "Milk Cow VII",
+    "Milk Cow VIII",
+    "Milk Cow IX",
+    "Milk Cow X"
 )
 foreach ($taskId in $buildTasks) {
     $orig = if ($origTLookup.ContainsKey($taskId)) { $origTLookup[$taskId] } else { $null }
@@ -492,6 +502,7 @@ Set-EquipP16 "Electric Compressor" "EnergyUsage = 0.0, OxygenCompression = 40, N
 
 # AA-Guns stärker machen (Reload/Range hoch)
 Set-EquipP16 "Oerlikon" "Calibre = 20, Range = 6000, ReloadTime = 0.1, MagazineSize = 60, HorizontalRecoil = 0.0, MinVerticalRecoil = 0.0, MaxVerticalRecoil = 0.0, SeriesTimeOffset = 0.1, RecoilDuration = 0.14, RecoilRecovery = 0.2, RecoilGrowthRate = 0.7, RecoilRecoveryRate = 0.985, SkippedShells = 6"
+Set-EquipP16 "43U" "Calibre = 20, Range = 5000, ReloadTime = 0.1, MagazineSize = 120, HorizontalRecoil = 1, MinVerticalRecoil = -0.3, MaxVerticalRecoil = 0.7, SeriesTimeOffset = 0.1, RecoilDuration = 0.3, RecoilRecovery = 0.2, RecoilGrowthRate = 0.07, RecoilRecoveryRate = 0.99, SkippedShells = 3"
 Set-EquipP16 "AAGun - 4.5 cm" "Calibre = 45, Range = 9000, ReloadTime = 0.1, MagazineSize = 60, HorizontalRecoil = 0.0, MinVerticalRecoil = 0.0, MaxVerticalRecoil = 0.0, SeriesTimeOffset = 0.1, RecoilDuration = 0.14, RecoilRecovery = 0.2, RecoilGrowthRate = 0.7, RecoilRecoveryRate = 0.985, SkippedShells = 6"
 Set-EquipP16 "QF 3.7-inch AA gun" "Calibre = 88, Range = 12000, ReloadTime = 0.1, MagazineSize = 4, HorizontalRecoil = 0.0, MinVerticalRecoil = 0.0, MaxVerticalRecoil = 0.0, SeriesTimeOffset = 0.2, RecoilDuration = 0.1, RecoilRecovery = 0.2, RecoilGrowthRate = 0.7, RecoilRecoveryRate = 0.985"
 Set-EquipP16 "37 mm SK C30" "Calibre = 37, Range = 10000, ReloadTime = 0.1, MagazineSize = 4, HorizontalRecoil = 0.0, MinVerticalRecoil = 0.0, MaxVerticalRecoil = 0.0, SeriesTimeOffset = 0.1, RecoilDuration = 0.25, RecoilRecovery = 0.2, RecoilGrowthRate = 0.45, RecoilRecoveryRate = 0.981, SkippedShells = 0"

@@ -2,6 +2,32 @@
 
 All notable changes to this mod are documented in this file.
 
+## 1.7.23 - 2026-07-18 (MILK COW DURATION TUNING + ACADEMY VERIFY)
+
+### Milk Cow relocation duration reduced
+
+- Sandbox.xlsx / Tasks / Milk Cow I-X / Duration: 12 -> 1
+
+### Script synchronization
+
+- update-mod.ps1 now also enforces Duration=1 for Milk Cow I-X in the task duration pass
+
+### Naval Academy verification
+
+- Verified data-side: `Send Officer To Naval Academy` is present in mod and set to Duration=1 (vanilla=16)
+- If 16 days still appears in-game, likely cause is runtime/save-state/cached task instance rather than missing mod row
+
+## 1.7.22 - 2026-07-18 (43U AA BUFF)
+
+### 43U fire rate and range buffed
+
+- Entities.xlsx / Equipment / 43U / P16 / ReloadTime: 4.5 -> 0.1
+- Entities.xlsx / Equipment / 43U / P16 / Range: 3000 -> 5000
+
+### Script synchronization
+
+- update-mod.ps1 now sets 43U with ReloadTime=0.1 and Range=5000 in the final Set-EquipP16 pass
+
 ## 1.7.21 - 2026-07-17 (HULL DAMAGE VANILLA ROLLBACK)
 
 ### Hull damage factors reset to vanilla
