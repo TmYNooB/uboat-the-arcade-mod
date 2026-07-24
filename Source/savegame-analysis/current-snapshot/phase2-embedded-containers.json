@@ -1,0 +1,22 @@
+{
+  "rawSignatureCounts": {
+    "ole": 0,
+    "pk0304": 0,
+    "pk0506": 0,
+    "pk0102": 0
+  },
+  "zlibProbe": {
+    "inflatedBuffers": 0,
+    "maxInflateBytes": 83886080,
+    "available": true,
+    "totalCandidatesFound": 2404,
+    "maxCandidates": 0,
+    "candidatesTried": 2404,
+    "hits": 0
+  },
+  "extractedCount": 0,
+  "extracted": [],
+  "restBinPath": "C:\\Users\\User\\AppData\\LocalLow\\Deep Water Studio\\UBOAT\\Mods\\uboat-the-arcade-mod\\Source\\savegame-analysis\\current-snapshot\\block3-rest.bin",
+  "restBinBytes": 67108889,
+  "generatedAt": "2026-07-24T17:45:40"
+}

@@ -1,0 +1,144 @@
+﻿# Phase 1 - Block3 Parse Summary
+
+- Generated: 2026-07-24T17:39:55
+- Rest bytes: 67108889
+- Segment count (FE FF FF FF headers): 6
+- Selected SaveData segment: index=0, offset=25, len=37016254
+- Parsed type: UBOAT.Game.Serialization.SaveData, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- Token count in selected segment: 65008
+- Sandbox class markers: 270
+- Task markers: 713
+- Settings markers: 36
+
+## Top-level presence
+- sceneObjects: present=True, count=1
+- scriptableObjects: present=True, count=1
+- sandbox: present=True, count=316
+- playerShip: present=True, count=72
+- sceneOrigin: present=True, count=3
+- stringPool: present=True, count=5
+- storedStrings: present=True, count=1
+- stringPairToIdDictionary: present=True, count=1
+- stringToIdDictionary: present=True, count=1
+
+## Sandbox class sample
+- "Z??jUBOAT.Game.Sandbox.Missions.Mission, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- #Z??rUBOAT.Game.Sandbox.Missions.ObjectiveTarget, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- %Z??lUBOAT.Game.Sandbox.Missions.Objective, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- (???wUBOAT.Game.Sandbox.Missions.PlantMinesAssignment, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null*
+- )???gUBOAT.Game.Sandbox.SandboxEntity, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=nullH
+- *???vUBOAT.Game.Sandbox.Missions.TuberculosisMission, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- ,UBOAT.Game.Sandbox.Missions.CrewBrawlMission
+- ,UBOAT.Game.Sandbox.Missions.MoldyFoodMission
+- ,UBOAT.Game.Sandbox.Missions.PatrolAssignment
+- .???qUBOAT.Game.Sandbox.Messages.WeatherMessage, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- .UBOAT.Game.Sandbox.Missions.GatherIntelMission
+- /UBOAT.Game.Sandbox.Missions.ReportStatusMission
+- /UBOAT.Game.Sandbox.Missions.TuberculosisMission
+- :???rUBOAT.Game.Sandbox.Missions.SinkShipMission, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- ????|UBOAT.Game.Sandbox.HQ.ItemsProduction+ProductionOrder, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- ????|UBOAT.Game.Sandbox.Missions.ChangePatrolTargetMission, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- ????~UBOAT.Game.Sandbox.Missions.FoggyWeatherMissionModifier, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- ????aUBOAT.Game.Sandbox.Country, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- ????aUBOAT.Game.Sandbox.Sandbox, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- ????eUBOAT.Game.Sandbox.Coordinates, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- ????fUBOAT.Game.Sandbox.SandboxGroup, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null3
+- ????gUBOAT.Game.Sandbox.HQ.Production, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- ????hUBOAT.Game.Sandbox.SandboxAirBase, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=nullH
+- ????iUBOAT.Game.Sandbox.HQ.Headquarters, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- ????iUBOAT.Game.Sandbox.HQ.JoinAlliance, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- ????jUBOAT.Game.Sandbox.Messages.Journal, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- ????jUBOAT.Game.Sandbox.SandboxEquipment, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- ????jUBOAT.Game.Sandbox.SandboxGroupInfo, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- ????kUBOAT.Game.Sandbox.HQ.SetPuppetState, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- ????lUBOAT.Game.Sandbox.HQ.ItemsProduction, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- ????lUBOAT.Game.Sandbox.HQ.SetEntityTarget, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- ????lUBOAT.Game.Sandbox.HQ.SetGroupCountry, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- ????lUBOAT.Game.Sandbox.SandboxSceneOrigin, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- ????mUBOAT.Game.Sandbox.HQ.AddWorldStateTag, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- ????nUBOAT.Game.Sandbox.SandboxEquipmentData, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- ????oUBOAT.Game.Sandbox.GroupChangedEventData, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- ????oUBOAT.Game.Sandbox.Messages.IntelMessage, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- ????pUBOAT.Game.Sandbox.HQ.EquipmentProduction, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- ????pUBOAT.Game.Sandbox.Messages.CustomMessage, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- ????pUBOAT.Game.Sandbox.SandboxCheckpointGroup, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null3
+
+## Task marker sample
+- !EscortDutyAssignment.IntroMessage^
+- !EscortDutyAssignment.IntroMessageb
+- !isContinuationOfAnotherAssignment
+- !PlantMinesAssignment.IntroMessage\
+- !PlantMinesAssignment.IntroMessage]
+- !PlantMinesAssignment.IntroMessageQ
+- !PlantMinesAssignment.IntroMessageR
+- !PlantMinesAssignment.IntroMessageS
+- !PlantMinesAssignment.IntroMessageT
+- !playedFirstAssignmentIntroduction
+- !PortAttackAssignment.IntroMessagea
+- "Dublin Warships (Mission Use Only)
+- "EspionageAssignment.SpyTransported]
+- "EspionageAssignment.SpyTransported_
+- "EspionageAssignment.SpyTransportedQ
+- "EspionageAssignment.SpyTransportedS
+- "EspionageAssignment.SpyTransportedT
+- "General/Background Tasks/AutoSaver
+- "General/Background Tasks/NavalGrid
+- "LandTeamAssignment.MissionFinished_
+- "SinkShipMission.RouteUpdate.ConvoyJ
+- "WeatherStationDeploymentAssignment
+- "Z??jUBOAT.Game.Sandbox.Missions.Mission, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- #DangerousReturnMission.IntroMessage_
+- #DangerousReturnMission.IntroMessageT
+- #G??sUBOAT.Game.Scene.Tasks.WeatherForecastPeriod, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- #InvestigateWeatherStationAssignment
+- #JoinFlotillaAssignment.IntroMessage\
+- #JoinFlotillaAssignment.IntroMessageb
+- #Messages/EscortDutyAssignment.Title
+- #Messages/EscortDutyAssignment.Title"
+- #PatrolAssignment.DestinationReached]
+- #PatrolAssignment.DestinationReachedJ
+- #PatrolAssignment.DestinationReachedP
+- #PatrolAssignment.DestinationReachedR
+- #PatrolAssignment.DestinationReachedS
+- #PatrolAssignment.DestinationReachedT
+- #Z??rUBOAT.Game.Sandbox.Missions.ObjectiveTarget, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- $Activators/Use Attack Periscope Task
+- $Entities/Aruba Mission Defences East
+
+## Settings marker sample
+- *??tHDRPLensFlare+FlareSettings, com.unity.standardassets.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- *applyDeckViewSettingsToThirdDistancePreset
+- .General/Background Tasks/ApplyMoraleDifficulty
+- ??tUBOAT.Game.Scene.Effects.LightQualitySettings, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- ?w??wUBOAT.Game.Scene.Effects.WaterSettingsController, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- {=??pUBOAT.Game.Scene.Camera.StageViewSettings, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- }G??sUBOAT.Game.Scene.Tasks.ApplyMoraleDifficulty, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- <General/Background Tasks/PreserveGameplaySettingsInGameState
+- damageDifficulty
+- DamageReduction
+- difficulty
+- economicDifficulty
+- enemyDifficulty
+- gyroAngleSettingSpeed
+- isUpdatingTorpedoSettings
+- m_SettingsUpdateNeeded
+- minimalSettings
+- moraleDifficulty
+- officersOnBoardLimit
+- pUBOAT.Game.Scene.Camera.StageViewSettings, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- sailorsOnBoardLimit
+- salvoSpreadAngleSettingSpeed
+- setGlobalSettings
+- settings
+- settingsStored
+- stageViewSettings
+- sUBOAT.Game.Scene.Tasks.ApplyMoraleDifficulty, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- survivorsOnBoardLimit
+- taskDifficulty
+- tHDRPLensFlare+FlareSettings, com.unity.standardassets.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- torpedoAttackSettings
+- tUBOAT.Game.Scene.Effects.LightQualitySettings, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- UBOAT.Game.Scene.Entities.PlayerShipTorpedoAttackSettings, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+- UBOAT.Game.Scene.Tasks.PreserveGameplaySettingsInGameState, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null)
+- vacationPriceModifier
+- wUBOAT.Game.Scene.Effects.WaterSettingsController, com.uboat.game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

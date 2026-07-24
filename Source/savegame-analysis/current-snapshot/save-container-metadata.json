@@ -1,0 +1,18 @@
+﻿{
+    "generatedAt":  "2026-07-24T17:39:30",
+    "sourceSavePath":  "C:\\Users\\User\\AppData\\LocalLow\\Deep Water Studio\\UBOAT\\Saves\\260614 UbootTyp2.save",
+    "sourceSaveSizeBytes":  6885170,
+    "block1GameStateBytes":  4096,
+    "block2ScreenshotBytes":  5898,
+    "block3RestBytes":  67108889,
+    "block2LooksLikeJpeg":  true,
+    "block3HeaderSignature":  "FE FF FF FF",
+    "block3HeaderOffsets":  [
+                                25,
+                                37016279,
+                                41387446,
+                                41387499,
+                                41646208,
+                                41646261
+                            ]
+}
